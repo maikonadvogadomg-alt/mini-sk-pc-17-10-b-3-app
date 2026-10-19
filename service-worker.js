@@ -1,10 +1,20 @@
-// service-worker.js — gerado pelo Mini SK em 17/10/2026, 11:29:47
+// service-worker.js — gerado pelo Mini SK em 19/10/2026, 01:03:08
 // Não precisa mexer: ele guarda sozinho o que o app usa.
-const PREFIXO = 'sk-mini-sk-pc-17-10-b-3-';
-const CACHE = PREFIXO + 'mvchtigf';
+const PREFIXO = 'sk-mini-sk-pc-';
+const CACHE = PREFIXO + 'mveqbc6b';
 // Lista feita automaticamente (para funcionar sem internet logo após instalar)
 const GUARDAR = [
   "./",
+  "./android/app/build.gradle",
+  "./android/app/src/main/AndroidManifest.xml",
+  "./android/app/src/main/assets/__ponte.js",
+  "./android/app/src/main/java/app/minisk/shell/MainActivity.java",
+  "./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+  "./android/app/src/main/res/xml/rede.xml",
+  "./android/build.gradle",
+  "./android/gradle.properties",
+  "./android/settings.gradle",
+  "./apk.config.json",
   "./app/css/app.css",
   "./app/favicon.ico",
   "./app/icons/apple-touch-icon.png",
@@ -92,8 +102,12 @@ const GUARDAR = [
   "./icons/maskable-512.png",
   "./icons/maskable.svg",
   "./index.html",
+  "./Instalador-Juridico-EXE-Python-18-10 (cópia).html",
+  "./Instalador-Juridico-EXE-Python-18-10.html",
+  "./juntar.py",
   "./LEIA-ME.md",
   "./manifest.json",
+  "./package-lock.json",
   "./package.json",
   "./PLANO.md"
 ];

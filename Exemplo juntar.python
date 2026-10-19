@@ -1,0 +1,13 @@
+# ... (código existente do juntar.py) ...
+
+# 4) cada <!-- INCLUIR: caminho/do/arquivo.html --> vira o conteúdo do arquivo
+def incluir_html(m):
+    rel = m.group(1).strip() # Pega o caminho do arquivo (ex: components/cabecalho.html)
+    c = ler(rel) # Usa a função 'ler' existente para encontrar o arquivo
+    if not c: return m.group(0) # Se não achou, deixa o marcador como está
+    return open(c, encoding='utf-8').read() # Retorna o conteúdo do arquivo HTML
+
+# Aplica a substituição depois de CSS, JS e Imagens
+html = re.sub(r'<!--\s*INCLUIR:\s*([^>]+?)\s*-->', incluir_html, html, flags=re.I)
+
+# ... (restante do código do juntar.py) ...

@@ -1,27 +1,28 @@
 # 📋 Plano do projeto: Mini-SK-PC-17-10-b (3)
 
-_Gerado em 17/10/2026, 11:28:34 — sem IA, lendo os arquivos._
+_Gerado em 19/10/2026, 01:03:08 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
 |---|---|
-| Arquivos | 55 |
-| Linhas | 11.470 |
-| Telas/páginas | 1 |
+| Arquivos | 100 |
+| Linhas | 17.611 |
+| Telas/páginas | 4 |
 | Rotas do backend | 0 |
 | Chamadas do app | 0 |
 | Tabelas do banco | 0 |
 | Variáveis de ambiente | 8 |
 
-**Linguagens:** JavaScript (45), Imagem (2), Markdown (2), JSON (2), YAML (1), Outros (1), CSS (1), HTML (1)
+**Linguagens:** JavaScript (47), Imagem (30), JSON (5), Imagem SVG (4), HTML (4), Markdown (3), YAML (2), Ícone (2), Outros (1), CSS (1), Python (1)
 
 ## 💡 O que fazer (em ordem)
-1. 🧹 Tirar a Replit de 13 arquivo(s) (🏗️ Preparar → Fazer tudo)
+1. 🧹 Tirar a Replit de 15 arquivo(s) (🏗️ Preparar → Fazer tudo)
 2. 🔐 Criar um .env.example com: BASE_PATH, DADOS_EM, GITHUB_STEP_SUMMARY, LOCALAPPDATA, PONTE_BASE, PONTE_CODIGO, PONTE_PORTA, TESTE_SAIR (os valores você coloca no servidor, nunca no código)
 3. 📝 Criar um README.md explicando como rodar
 
 ## 🚀 Por onde começa
 - `app/index.html`
+- `index.html`
 
 ## ⌨️ Comandos (package.json)
 | Pasta | Comando | O que roda |
@@ -33,6 +34,9 @@ _Gerado em 17/10/2026, 11:28:34 — sem IA, lendo os arquivos._
 | Endereço | Arquivo |
 |---|---|
 | `app/index.html` | app/index.html |
+| `index.html` | index.html |
+| `Instalador-Juridico-EXE-Python-18-10 (cópia).html` | Instalador-Juridico-EXE-Python-18-10 (cópia).html |
+| `Instalador-Juridico-EXE-Python-18-10.html` | Instalador-Juridico-EXE-Python-18-10.html |
 
 ## 🖥️ Rotas do backend
 _Nenhum encontrado._
@@ -121,6 +125,8 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 - app/js/lib/expo-core.js
 - app/js/lib/plano-core.js
 - app/js/lib/receita-core.js
+- app/service-worker.js
+- service-worker.js
 
 ## 🔁 Roteiro para recriar fora da Replit
 1. Importar o projeto no Mini SK e tocar em 🏗️ Preparar → ✅ Fazer tudo (tira a Replit, cria os arquivos que faltam).
@@ -133,13 +139,29 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 ```
 ├─ 📁 .github/
 │  └─ 📁 workflows/
+│     ├─ apk.yml
 │     └─ programa-exe.yml
 ├─ 📁 app/
 │  ├─ 📁 css/
 │  │  └─ app.css
 │  ├─ 📁 icons/
+│  │  ├─ apple-touch-icon.png
+│  │  ├─ icon-128.png
+│  │  ├─ icon-144.png
+│  │  ├─ icon-152.png
+│  │  ├─ icon-16.png
+│  │  ├─ icon-180.png
 │  │  ├─ icon-192.png
-│  │  └─ icon-512.png
+│  │  ├─ icon-32.png
+│  │  ├─ icon-384.png
+│  │  ├─ icon-48.png
+│  │  ├─ icon-512.png
+│  │  ├─ icon-72.png
+│  │  ├─ icon-96.png
+│  │  ├─ icon.svg
+│  │  ├─ maskable-192.png
+│  │  ├─ maskable-512.png
+│  │  └─ maskable.svg
 │  ├─ 📁 js/
 │  │  ├─ 📁 lib/
 │  │  │  ├─ expo-core.js
@@ -182,16 +204,46 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 │  │  ├─ 97-analise.js
 │  │  ├─ 98-api.js
 │  │  └─ 99-app.js
+│  ├─ favicon.ico
 │  ├─ index.html
 │  ├─ LEIA-ME.md
 │  ├─ manifest.json
+│  ├─ service-worker.js
 │  └─ sw.js
 ├─ 📁 electron/
 │  ├─ main.cjs
 │  ├─ ponte.cjs
 │  ├─ preload.cjs
 │  └─ terminal.cjs
+├─ 📁 icons/
+│  ├─ apple-touch-icon.png
+│  ├─ icon-128.png
+│  ├─ icon-144.png
+│  ├─ icon-152.png
+│  ├─ icon-16.png
+│  ├─ icon-180.png
+│  ├─ icon-192.png
+│  ├─ icon-32.png
+│  ├─ icon-384.png
+│  ├─ icon-48.png
+│  ├─ icon-512.png
+│  ├─ icon-72.png
+│  ├─ icon-96.png
+│  ├─ icon.svg
+│  ├─ maskable-192.png
+│  ├─ maskable-512.png
+│  └─ maskable.svg
 ├─ .gitignore
+├─ apk.config.json
+├─ favicon.ico
+├─ index.html
+├─ Instalador-Juridico-EXE-Python-18-10 (cópia).html
+├─ Instalador-Juridico-EXE-Python-18-10.html
+├─ juntar.py
 ├─ LEIA-ME.md
-└─ package.json
+├─ manifest.json
+├─ package-lock.json
+├─ package.json
+├─ PLANO.md
+└─ service-worker.js
 ```

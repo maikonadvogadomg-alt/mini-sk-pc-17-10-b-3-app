@@ -1,0 +1,17 @@
+        {
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css": {
+                "nome": "Bootstrap CSS",
+                "tipo": "Framework CSS",
+                "funcao": "Estilos e componentes para design responsivo.",
+                "importancia": "Alta, define o visual principal.",
+                "alternativas": ["Tailwind CSS", "Bulma", "Materialize CSS"]
+            },
+            "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js": {
+                "nome": "jQuery",
+                "tipo": "Biblioteca JavaScript",
+                "funcao": "Simplifica manipulação de DOM, eventos e AJAX.",
+                "importancia": "Média/Alta, dependendo do uso. Pode ser substituído por JS puro.",
+                "alternativas": ["JavaScript puro", "Vanilla JS"]
+            }
+        }
+        
